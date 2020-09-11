@@ -11,5 +11,15 @@ public class MainTest {
 		yakshaAssert(currentTest(),Main.convertToTwoDecimalPlace(9866.7389).equals("9866.74")?"true":"false",businessTestFile);
 		yakshaAssert(currentTest(),Main.convertToTwoDecimalPlace(9234).equals("9234.00")?"true":"false",businessTestFile);
 	}
+	@Test
+    public void testExceptionConditon() throws Exception{
+	 yakshaAssert(currentTest(),true,boundaryTestFile);
+      }
+
+	@Test
+	public void testBoundaryCondition() throws Exception {
+	  yakshaAssert(currentTest(),true,exceptionTestFile);
+   }
+
 
 }
